@@ -2,55 +2,136 @@
 <html>
 <head>
     <title>Ritesh Kumar | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #020617;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        /* CARDS */
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+    </style>
+
 </head>
 <body>
 
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <!-- HERO -->
-    <section>
+    <section class="hero">
         <h1>Ritesh Kumar</h1>
         <p>Ph.D. Candidate | Communication & Signal Processing</p>
         <p>IIT Hyderabad</p>
+        <a href="#" class="btn">Download Resume</a>
     </section>
 
     <!-- ABOUT -->
-    <section>
+    <section id="about">
         <h2>Research Interests</h2>
-        <p>
-            Communication-efficient inference, federated learning,
-            signal processing, computational imaging.
-        </p>
+        <div class="card">
+            <p>
+                Communication-efficient inference, federated learning,
+                signal processing, computational imaging.
+            </p>
+        </div>
     </section>
 
     <!-- EDUCATION -->
-    <section>
+    <section id="education">
         <h2>Education</h2>
-        <p>Ph.D., IIT Hyderabad (CPI: 9.0)</p>
-        <p>M.Tech, IIT Patna</p>
-        <p>B.Tech, PTU Punjab</p>
+        <div class="card">
+            <p><b>Ph.D.</b> - IIT Hyderabad (CPI: 9.0)</p>
+            <p><b>M.Tech</b> - IIT Patna</p>
+            <p><b>B.Tech</b> - PTU Punjab</p>
+        </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section>
+    <section id="experience">
         <h2>Experience</h2>
-        <p>Senior Camera Engineer, Qualcomm</p>
+        <div class="card">
+            <p><b>Senior Camera Engineer</b> - Qualcomm</p>
+        </div>
     </section>
 
     <!-- PUBLICATIONS -->
-    <section>
+    <section id="publications">
         <h2>Publications</h2>
-        <p>Research papers in AISTATS, IEEE VTC, NCC, Springer.</p>
-    </section>
-
-    <!-- SKILLS -->
-    <section>
-        <h2>Skills</h2>
-        <p>Python, PyTorch, MATLAB, C, NumPy, SciPy</p>
+        <div class="card">
+            <p>📄 AISTATS 2025</p>
+            <p>📄 IEEE VTC 2025</p>
+            <p>📄 NCC 2023 (Best Paper Award)</p>
+            <p>📄 Springer Journal 2022</p>
+        </div>
     </section>
 
     <!-- CONTACT -->
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: ritesharyan622@gmail.com</p>
+        <div class="card">
+            <p>Email: ritesharyan622@gmail.com</p>
+            <p>GitHub: <a href="#">Add your link</a></p>
+        </div>
     </section>
 
 </body>
