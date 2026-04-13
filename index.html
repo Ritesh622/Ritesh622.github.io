@@ -12,27 +12,24 @@
             line-height: 1.6;
         }
 
-        /* NAVBAR */
         nav {
             padding: 15px 40px;
             border-bottom: 1px solid #e0e0e0;
-            font-size: 14px;
         }
 
         nav a {
             margin-right: 20px;
             text-decoration: none;
             color: #1a73e8;
+            font-size: 14px;
         }
 
-        /* CONTAINER */
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        /* HEADER */
         .header {
             display: flex;
             gap: 30px;
@@ -40,37 +37,29 @@
         }
 
         .profile-pic {
-            width: 140px;
-            height: 180px;
+            width: 150px;
+            height: 190px;
             object-fit: cover;
             border-radius: 4px;
         }
 
         .name {
             font-size: 32px;
-            margin-bottom: 5px;
         }
 
         .subtitle {
             color: #5f6368;
-            font-size: 16px;
-        }
-
-        /* LINKS */
-        .links {
-            margin-top: 10px;
+            font-size: 15px;
         }
 
         .links a {
             margin-right: 15px;
             color: #1a73e8;
             text-decoration: none;
-            font-size: 14px;
         }
 
-        /* SECTION */
         .section {
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
         .section h2 {
@@ -79,18 +68,25 @@
             padding-bottom: 5px;
         }
 
-        /* PUBLICATIONS */
         .pub {
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .pub-title {
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .pub-meta {
             color: #5f6368;
             font-size: 14px;
+        }
+
+        .pub a {
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
     </style>
@@ -102,88 +98,123 @@
     <a href="#top">Home</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
+    <a href="#misc">Beyond</a>
+    <a href="#blog">Writings</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-    <!-- HEADER -->
-    <div class="header" id="top">
-        <img src="newpic.jpg" class="profile-pic">
+<!-- HEADER -->
+<div class="header" id="top">
+    <img src="newpic.jpg" class="profile-pic">
 
-        <div>
-            <div class="name">Ritesh Kumar</div>
-            <div class="subtitle">
-                Ph.D. Candidate, Communication & Signal Processing<br>
-                IIT Hyderabad | Senior Engineer @ Qualcomm
-            </div>
-
-            <div class="links">
-                <a href="resume.pdf">Resume</a>
-                <a href="https://github.com/Ritesh622">GitHub</a>
-                <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/">LinkedIn</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="section">
-        <h2>Research Interests</h2>
-        <p>
-            Communication-efficient inference, federated learning,
-            statistical signal processing, and intelligent imaging systems.
-        </p>
-    </div>
-
-    <!-- PUBLICATIONS -->
-    <div class="section" id="publications">
-        <h2>Publications</h2>
-
-        <div class="pub">
-            <div class="pub-title">
-                One-Bit Distributed Mean Estimation with Unknown Variance
-            </div>
-            <div class="pub-meta">TMLR 2025</div>
+    <div>
+        <div class="name">Ritesh Kumar</div>
+        <div class="subtitle">
+            Ph.D. Candidate, Communication & Signal Processing <br>
+            IIT Hyderabad | Senior Engineer @ Qualcomm
         </div>
 
-        <div class="pub">
-            <div class="pub-title">
-                Unbiased Quantization of the L1 Ball
-            </div>
-            <div class="pub-meta">AISTATS 2025</div>
+        <div class="links">
+            <a href="resume.pdf">Resume</a>
+            <a href="https://github.com/Ritesh622">GitHub</a>
+            <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/">LinkedIn</a>
         </div>
+    </div>
+</div>
 
-        <div class="pub">
-            <div class="pub-title">
-                RIS-Assisted Hybrid NOMA-OMA Systems
-            </div>
-            <div class="pub-meta">IEEE VTC 2025</div>
+<!-- ABOUT -->
+<div class="section">
+    <h2>Research Interests</h2>
+    <p>
+        Communication-efficient inference, federated learning,
+        statistical signal processing, computational imaging,
+        and intelligent camera systems.
+    </p>
+</div>
+
+<!-- PUBLICATIONS -->
+<div class="section" id="publications">
+    <h2>Publications</h2>
+
+    <div class="pub">
+        <div class="pub-title">
+            One-Bit Distributed Mean Estimation with Unknown Variance
         </div>
-
-        <div class="pub">
-            <div class="pub-title">
-                Communication-Constrained Mean Estimation
-            </div>
-            <div class="pub-meta">NCC 2023 (Best Paper Award)</div>
-        </div>
-
+        <div class="pub-meta">TMLR 2025</div>
+        <a href="#">[Paper]</a>
     </div>
 
-    <!-- PROJECTS -->
-    <div class="section" id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Distributed Inference under Communication Constraints</li>
-            <li>Federated Learning with Robust Quantization (EDEN)</li>
-            <li>Communication-Efficient Distributed Systems</li>
-        </ul>
+    <div class="pub">
+        <div class="pub-title">
+            Unbiased Quantization of the L1 Ball
+        </div>
+        <div class="pub-meta">AISTATS 2025</div>
+        <a href="#">[Paper]</a>
     </div>
 
-    <!-- CONTACT -->
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: ritesharyan622@gmail.com</p>
+    <div class="pub">
+        <div class="pub-title">
+            RIS-Assisted Hybrid NOMA-OMA Systems
+        </div>
+        <div class="pub-meta">IEEE VTC 2025</div>
+        <a href="#">[Paper]</a>
     </div>
+
+    <div class="pub">
+        <div class="pub-title">
+            Communication-Constrained Mean Estimation
+        </div>
+        <div class="pub-meta">NCC 2023 (Best Paper Award)</div>
+        <a href="#">[Paper]</a>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <b>Distributed Inference under Communication Constraints</b><br>
+            Working on efficient algorithms for federated systems with limited communication.
+        </li>
+
+        <li>
+            <b>Federated Learning with Robust Quantization (EDEN)</b><br>
+            Implemented robust distributed mean estimation techniques.
+        </li>
+
+        <li>
+            <b>Communication-Efficient Distributed Systems</b><br>
+            Designed algorithms minimizing communication cost.
+        </li>
+    </ul>
+</div>
+
+<!-- MISC -->
+<div class="section" id="misc">
+    <h2>Beyond Research</h2>
+    <p>
+        ✍️ A poet exploring rhythm and ideas.<br>
+        🏑 Inter-IIT hockey player and team leader.<br>
+        🎭 Interested in expression beyond equations.
+    </p>
+</div>
+
+<!-- BLOG -->
+<div class="section" id="blog">
+    <h2>Writings & Thoughts</h2>
+    <p>
+        Coming soon — I will share thoughts on research, life, and ideas.
+    </p>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: ritesharyan622@gmail.com</p>
+</div>
 
 </div>
 
