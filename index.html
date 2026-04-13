@@ -6,12 +6,11 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0b1120;
             color: #e2e8f0;
         }
 
-        /* NAVBAR */
         nav {
             background: #020617;
             padding: 15px;
@@ -27,10 +26,9 @@
             font-weight: bold;
         }
 
-        /* SECTIONS */
         section {
-            padding: 60px 20px;
-            max-width: 900px;
+            padding: 70px 20px;
+            max-width: 1000px;
             margin: auto;
         }
 
@@ -38,29 +36,45 @@
             color: #38bdf8;
         }
 
-        /* HERO */
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px;
         }
 
-        /* CARDS */
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
+        .hero h1 {
+            font-size: 42px;
         }
 
-        /* BUTTON */
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+        }
+
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #38bdf8;
             color: black;
-            border-radius: 5px;
-            margin-top: 10px;
+            border-radius: 6px;
+            margin: 10px;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 12px;
+            line-height: 1.6;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #38bdf8;
         }
 
     </style>
@@ -68,71 +82,128 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#misc">Beyond</a>
+    <a href="#blog">Writings</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Ritesh Kumar</h1>
-        <p>Ph.D. Candidate | Communication & Signal Processing</p>
-        <p>IIT Hyderabad</p>
-        <a href="#" class="btn">Download Resume</a>
-    </section>
+<!-- HERO -->
+<section class="hero">
+    <h1>Ritesh Kumar</h1>
+    <p>Ph.D. Candidate | Communication & Signal Processing | IIT Hyderabad</p>
+    <p>
+        Working at the intersection of federated learning, signal processing,
+        and real-world intelligent systems at Qualcomm.
+    </p>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>Research Interests</h2>
-        <div class="card">
-            <p>
-                Communication-efficient inference, federated learning,
-                signal processing, computational imaging.
-            </p>
-        </div>
-    </section>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <a href="#" class="btn">GitHub</a>
+    <a href="#" class="btn">LinkedIn</a>
+</section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="card">
-            <p><b>Ph.D.</b> - IIT Hyderabad (CPI: 9.0)</p>
-            <p><b>M.Tech</b> - IIT Patna</p>
-            <p><b>B.Tech</b> - PTU Punjab</p>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section id="about">
+    <h2>Research Interests</h2>
+    <div class="card">
+        Communication-efficient inference, distributed and federated learning,
+        statistical signal processing, computational imaging, and intelligent
+        camera systems.
+    </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <p><b>Senior Camera Engineer</b> - Qualcomm</p>
-        </div>
-    </section>
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <b>Senior Engineer – Camera System (Image Quality)</b><br>
+        Qualcomm (2026 – Present)
+        <p>
+            Working on evaluation and optimization of camera systems,
+            developing tools using MATLAB & Python, and improving real-world
+            image and video quality pipelines.
+        </p>
+    </div>
+</section>
 
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <div class="card">
-            <p>📄 AISTATS 2025</p>
-            <p>📄 IEEE VTC 2025</p>
-            <p>📄 NCC 2023 (Best Paper Award)</p>
-            <p>📄 Springer Journal 2022</p>
-        </div>
-    </section>
+<!-- PUBLICATIONS -->
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="card">
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: ritesharyan622@gmail.com</p>
-            <p>GitHub: <a href="#">Add your link</a></p>
-        </div>
-    </section>
+        <p>
+            <b>One-Bit Distributed Mean Estimation with Unknown Variance</b><br>
+            TMLR 2025 | <a href="#">View</a>
+        </p>
+
+        <p>
+            <b>Unbiased Quantization of the L1 Ball</b><br>
+            AISTATS 2025 | <a href="#">View</a>
+        </p>
+
+        <p>
+            <b>RIS-Assisted Hybrid NOMA-OMA Systems</b><br>
+            IEEE VTC 2025 | <a href="#">View</a>
+        </p>
+
+        <p>
+            <b>Communication-Constrained Mean Estimation</b><br>
+            NCC 2023 🏆 | <a href="#">View</a>
+        </p>
+
+        <p>
+            <b>Healthcare Data Encryption in IoT</b><br>
+            Springer 2022 | <a href="#">View</a>
+        </p>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Key Projects</h2>
+    <div class="card">
+        <p><b>Distributed Inference under Communication Constraints</b></p>
+        <p><b>Federated Learning with Robust Quantization (EDEN)</b></p>
+        <p><b>Communication-Efficient Algorithms for Distributed Systems</b></p>
+    </div>
+</section>
+
+<!-- MISC -->
+<section id="misc">
+    <h2>Beyond Research</h2>
+    <div class="card">
+        ✍️ A poet who finds structure in chaos and rhythm in randomness.<br>
+        🏑 Inter-IIT hockey player and team leader, driven by discipline and teamwork.<br>
+        🎭 Explorer of ideas beyond equations — from stage to science.
+    </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+    <h2>Writings & Thoughts</h2>
+    <div class="card">
+        <p><b>Coming Soon</b></p>
+        <p>
+            I will share insights on research, learning, life, and ideas that
+            lie beyond equations.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        Email: ritesharyan622@gmail.com<br>
+        GitHub: <a href="#">Add Link</a><br>
+        LinkedIn: <a href="#">Add Link</a>
+    </div>
+</section>
 
 </body>
 </html>
