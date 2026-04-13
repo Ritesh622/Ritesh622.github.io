@@ -1,161 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ritesh Kumar | Portfolio</title>
+    <title>Ritesh Kumar</title>
 
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
+            font-family: Arial, Helvetica, sans-serif;
+            background: white;
+            color: #202124;
+            line-height: 1.6;
         }
 
         /* NAVBAR */
         nav {
-            background: white;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            text-align: center;
-            border-bottom: 1px solid #e2e8f0;
+            padding: 15px 40px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 14px;
         }
 
         nav a {
-            margin: 0 15px;
-            color: #2563eb;
+            margin-right: 20px;
             text-decoration: none;
-            font-weight: 600;
+            color: #1a73e8;
         }
 
-        /* HERO */
-        .hero {
-           /* padding: 100px 20px; */
-           background: linear-gradient(to bottom, #ffffff, #f8fafc);
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        .hero-container {
+        /* HEADER */
+        .header {
             display: flex;
+            gap: 30px;
             align-items: center;
-            gap: 50px;
-            max-width: 1000px;
-            margin: auto;
-            flex-wrap: wrap;
         }
 
-        .hero-text {
-            max-width: 500px;
+        .profile-pic {
+            width: 140px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
         }
 
-        .hero-text h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            font-weight: 600;
-            color: #1e293b;
+        .name {
+            font-size: 32px;
+            margin-bottom: 5px;
         }
 
         .subtitle {
-            color: #475569;
-            margin-bottom: 10px;
+            color: #5f6368;
+            font-size: 16px;
         }
 
-        .desc {
-            color: #334155;
-            line-height: 1.6;
+        /* LINKS */
+        .links {
+            margin-top: 10px;
         }
 
-        .hero-buttons {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        /* BUTTON */
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #1d4ed8;
-            color: white;
-            border-radius: 6px;
-            margin: 10px 10px 10px 0;
+        .links a {
+            margin-right: 15px;
+            color: #1a73e8;
             text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
+            font-size: 14px;
         }
 
-        .btn:hover {
-            background: #1e40af;
-            transform: translateY(-2px);
+        /* SECTION */
+        .section {
+            margin-top: 40px;
         }
 
-        /* IMAGE */
-        .profile-pic {
-                image-rendering: auto;
-                backface-visibility: hidden;
-            width: 260px;
-            height: 300px;
-            object-fit: cover;
-            object-position: center;
-        
-            border-radius: 12px;
-            outline: 1px solid #e2e8f0;
-        
-            /* 🔥 KEY FIX */
-            filter: brightness(1.08) contrast(1.08) saturate(1.1);
-        
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        .section h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
         }
 
-        /* ICONS */
-        .icon {
-            width: 36px;
-            height: 36px;
-            margin: 5px;
+        /* PUBLICATIONS */
+        .pub {
+            margin-top: 15px;
         }
 
-        .icon:hover {
-            transform: scale(1.1);
+        .pub-title {
+            font-weight: bold;
         }
 
-        /* SECTIONS */
-        section {
-            padding: 70px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        /* CARD */
-        .card {
-            background: white;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 12px;
-            line-height: 1.6;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* PUBLICATIONS STYLE */
-        #publications .card p {
-            border-left: 3px solid #2563eb;
-            padding-left: 10px;
-        }
-
-        a {
-            color: #2563eb;
+        .pub-meta {
+            color: #5f6368;
+            font-size: 14px;
         }
 
     </style>
@@ -163,142 +98,94 @@
 
 <body>
 
-<!-- NAV -->
 <nav>
     <a href="#top">Home</a>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
     <a href="#publications">Publications</a>
     <a href="#projects">Projects</a>
-    <a href="#misc">Beyond</a>
-    <a href="#blog">Writings</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="top">
-    <div class="hero-container">
+<div class="container">
 
+    <!-- HEADER -->
+    <div class="header" id="top">
         <img src="newpic.jpg" class="profile-pic">
 
-        <div class="hero-text">
-            <h1>Ritesh Kumar</h1>
-
-            <p class="title">
-                Ph.D. Candidate — Communication & Signal Processing
-            </p>
-
-            <p class="subtitle">
+        <div>
+            <div class="name">Ritesh Kumar</div>
+            <div class="subtitle">
+                Ph.D. Candidate, Communication & Signal Processing<br>
                 IIT Hyderabad | Senior Engineer @ Qualcomm
-            </p>
-
-            <p class="desc">
-                Working on federated learning, communication-efficient inference,
-                and intelligent imaging systems bridging theory and real-world deployment.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="resume.pdf" class="btn" download>Download Resume</a>
-
-                <a href="https://github.com/Ritesh622">
-                    <img src="GitHub.png" class="icon">
-                </a>
-
-                <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/">
-                    <img src="LinkedIn.png" class="icon">
-                </a>
             </div>
+
+            <div class="links">
+                <a href="resume.pdf">Resume</a>
+                <a href="https://github.com/Ritesh622">GitHub</a>
+                <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+        <h2>Research Interests</h2>
+        <p>
+            Communication-efficient inference, federated learning,
+            statistical signal processing, and intelligent imaging systems.
+        </p>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="section" id="publications">
+        <h2>Publications</h2>
+
+        <div class="pub">
+            <div class="pub-title">
+                One-Bit Distributed Mean Estimation with Unknown Variance
+            </div>
+            <div class="pub-meta">TMLR 2025</div>
+        </div>
+
+        <div class="pub">
+            <div class="pub-title">
+                Unbiased Quantization of the L1 Ball
+            </div>
+            <div class="pub-meta">AISTATS 2025</div>
+        </div>
+
+        <div class="pub">
+            <div class="pub-title">
+                RIS-Assisted Hybrid NOMA-OMA Systems
+            </div>
+            <div class="pub-meta">IEEE VTC 2025</div>
+        </div>
+
+        <div class="pub">
+            <div class="pub-title">
+                Communication-Constrained Mean Estimation
+            </div>
+            <div class="pub-meta">NCC 2023 (Best Paper Award)</div>
         </div>
 
     </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>Research Interests</h2>
-    <div class="card">
-        Communication-efficient inference, distributed and federated learning,
-        statistical signal processing, computational imaging, and intelligent camera systems.
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Distributed Inference under Communication Constraints</li>
+            <li>Federated Learning with Robust Quantization (EDEN)</li>
+            <li>Communication-Efficient Distributed Systems</li>
+        </ul>
     </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-        <b>Senior Engineer – Camera System (Image Quality)</b><br>
-        Qualcomm (2026 – Present)
-        <p>
-            Working on evaluation and optimization of camera systems,
-            developing tools using MATLAB & Python, and improving real-world pipelines.
-        </p>
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: ritesharyan622@gmail.com</p>
     </div>
-</section>
 
-<!-- PUBLICATIONS -->
-<section id="publications">
-    <h2>Publications</h2>
-    <div class="card">
-
-        <p>
-            <b>One-Bit Distributed Mean Estimation with Unknown Variance</b><br>
-            <span style="color:#64748b;">TMLR 2025</span> | <a href="#">View</a>
-        </p>
-
-        <p>
-            <b>Unbiased Quantization of the L1 Ball</b><br>
-            <span style="color:#64748b;">AISTATS 2025</span> | <a href="#">View</a>
-        </p>
-
-        <p>
-            <b>RIS-Assisted Hybrid NOMA-OMA Systems</b><br>
-            <span style="color:#64748b;">IEEE VTC 2025</span> | <a href="#">View</a>
-        </p>
-
-        <p>
-            <b>Communication-Constrained Mean Estimation</b><br>
-            <span style="color:#64748b;">NCC 2023 🏆</span> | <a href="#">View</a>
-        </p>
-
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Key Projects</h2>
-    <div class="card">
-        <p><b>Distributed Inference under Communication Constraints</b></p>
-        <p><b>Federated Learning with Robust Quantization (EDEN)</b></p>
-        <p><b>Communication-Efficient Distributed Systems</b></p>
-    </div>
-</section>
-
-<!-- MISC -->
-<section id="misc">
-    <h2>Beyond Research</h2>
-    <div class="card">
-        ✍️ A poet who finds rhythm in ideas.<br>
-        🏑 Inter-IIT hockey player and team leader.<br>
-        🎭 Explorer of ideas beyond equations.
-    </div>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-    <h2>Writings & Thoughts</h2>
-    <div class="card">
-        <p><b>Coming Soon</b></p>
-        <p>I will share insights on research, life, and ideas.</p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        Email: ritesharyan622@gmail.com
-    </div>
-</section>
+</div>
 
 </body>
 </html>
