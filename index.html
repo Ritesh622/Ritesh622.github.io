@@ -64,12 +64,19 @@
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            background: #ccced3;
-            color: rgb(172, 166, 166);
+            background: #1d4ed8;
+            color: white;
             border-radius: 6px;
             margin: 10px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e40af;
+            transform: translateY(-2px);
         }
 
         .card {
@@ -87,6 +94,18 @@
 
         a {
             color: #2563eb;
+        }
+
+        .icon {
+            width: 40px;
+              height: 40px;
+             margin: 10px;
+             vertical-align: middle;
+             transition: 0.3s;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -113,8 +132,14 @@
     </p>
 
     <a href="resume.pdf" class="btn" download>Download Resume</a>
-    <a href="#" class="btn">GitHub</a>
-    <a href="#" class="btn">LinkedIn</a>
+
+    <a href="https://github.com/Ritesh622">
+        <img src="github.png" class="icon">
+    </a>
+
+    <a href="https://www.linkedin.com/in/ritesh-kumar-1b4230194/">
+        <img src="linkedin.png" class="icon">
+    </a>
 </section>
 
 <!-- ABOUT -->
