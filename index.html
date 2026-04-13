@@ -92,13 +92,15 @@
 
         /* IMAGE */
         .profile-pic {
+                image-rendering: auto;
+                backface-visibility: hidden;
             width: 260px;
             height: 300px;
             object-fit: cover;
             object-position: center;
         
             border-radius: 12px;
-            border: 4px solid white;
+            outline: 1px solid #e2e8f0;
         
             /* 🔥 KEY FIX */
             filter: brightness(1.08) contrast(1.08) saturate(1.1);
