@@ -30,8 +30,8 @@
 
         /* HERO */
         .hero {
-            padding: 100px 20px;
-            background: #f8fafc;
+           /* padding: 100px 20px; */
+           background: linear-gradient(to bottom, #ffffff, #f8fafc);
         }
 
         .hero-container {
@@ -92,13 +92,18 @@
 
         /* IMAGE */
         .profile-pic {
-            width: 240px;
-            height: 280px;
+            width: 260px;
+            height: 300px;
             object-fit: cover;
-            object-position: top;
-            border-radius: 10px;
-            filter: brightness(.90) contrast(0.90);
-           /* box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
+            object-position: center;
+        
+            border-radius: 12px;
+            border: 4px solid white;
+        
+            /* 🔥 KEY FIX */
+            filter: brightness(1.08) contrast(1.08) saturate(1.1);
+        
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
         /* ICONS */
