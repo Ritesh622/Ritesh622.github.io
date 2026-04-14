@@ -3,239 +3,109 @@
 <head>
     <title>Ritesh Kumar</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: white;
-            color: #202124;
-            line-height: 1.6;
-        }
-
-        nav {
-            padding: 15px 40px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        nav a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #1a73e8;
-            font-size: 14px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .header {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 190px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-
-        .name {
-            font-size: 32px;
-        }
-
-        .subtitle {
-            color: #5f6368;
-            font-size: 15px;
-        }
-
-        .links a {
-            margin-right: 15px;
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        .section {
-            margin-top: 50px;
-        }
-
-        .section h2 {
-            font-size: 20px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 5px;
-        }
-
-        .pub {
-            margin-top: 20px;
-        }
-
-        .pub-title {
-            font-weight: 600;
-        }
-
-        .pub-meta {
-            color: #5f6368;
-            font-size: 14px;
-        }
-
-        .pub a {
-            font-size: 14px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-        .award {
-            font-weight: 600;
-            color: #1a73e8;;
-        }
-
-    </style>
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-    <a href="#top">Home</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#misc">Beyond</a>
-    <a href="#blog">Writings</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
 <!-- HEADER -->
-<div class="header" id="top">
-    <img src="profilepic.png" class="profile-pic">
+<div class="header">
+    <div class="name">
+        <a href="index.html">Ritesh Kumar</a>
+    </div>
 
     <div>
-        <div class="name">Ritesh Kumar</div>
-        <div class="subtitle">
-            Ph.D. Candidate, Communication & Signal Processing <br>
-            IIT Hyderabad | Senior Engineer @ Qualcomm
-        </div>
-
-        <div class="links">
-            <a href="resume.pdf">Resume</a>
-            <a href="https://github.com/Ritesh622">GitHub</a>
-            <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/">LinkedIn</a>
-        </div>
+        <a href="research.html">RESEARCH</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="beyond.html">BEYOND</a>
+        <a href="contact.html">CONTACT</a>
     </div>
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-    <h2>Research Interests</h2>
-    <p>
-        Communication-efficient inference, federated learning,
-        statistical signal processing, computational imaging,
-        and intelligent camera systems.
-    </p>
+<!-- TITLE -->
+<div class="title">Home</div>
+
+<!-- DIVIDER -->
+<div class="divider">
+    <hr>
+    Welcome to my homepage!
+    <hr>
 </div>
 
-<!-- PUBLICATIONS -->
-<div class="section" id="publications">
-    <h2>Publications</h2>
+<!-- MAIN -->
+<div class="container">
 
-    <ol class="pub-list">
+    <!-- INTRO -->
+    <div class="intro">
+        <img src="profilepic.png" class="profile-pic">
 
+        <div>
+            <p>
+                I am a Ph.D. candidate in the Department of Electrical Engineering at the 
+                Indian Institute of Technology Hyderabad.
+            </p>
 
+            <p>
+                I currently work as a Senior Engineer at Qualcomm, focusing on image and video 
+                quality for camera systems.
+            </p>
 
-        <li>
-            <span class="me">Ritesh Kumar</span>, Shashank Vatedka,<br>
-            <em>“One-Bit Distributed Mean Estimation with Unknown Variance,”</em><br>
-            Transactions on Machine Learning Research (TMLR), accepted for publication, Jan 2026.<br>
-            <a href="https://openreview.net/forum?id=g95C4zIEPg" target="_blank">[Paper]</a>
-        </li>
+            <p>
+                My research interests include distributed inference, communication-efficient learning, 
+                and signal processing with applications to federated systems and imaging.
+            </p>
 
-        <li>
-            Nithish S*, <span class="me">Ritesh Kumar*</span>, Shashank Vatedka,<br>
-            <em>“Unbiased Quantization of the L₁ Ball for Distributed Mean Estimation,”</em><br>
-            International Conference on Artificial Intelligence and Statistics (AISTATS), 2025.<br>
-            <a href="https://proceedings.mlr.press/v258/babu25a.html" target="_blank">[Paper]</a>
-        </li>
+            <div class="links">
+                <a href="resume.pdf" target="_blank">Resume</a>
+                <a href="https://github.com/Ritesh622" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ritesh-pandey-1b4230194/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
 
-        <li>
-            Swaraj Srivastava, <span class="me">Ritesh Kumar</span>, Pavan Reddy M., Abhinav Kumar,<br>
-            <em>“RIS-Assisted Hybrid NOMA-OMA System with Imperfections in SIC and Phase Compensation,”</em><br>
-            IEEE Vehicular Technology Conference (VTC), 2025.<br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/11174557" target="_blank">[Paper]</a>
-        </li>
+    <!-- ACADEMIC BACKGROUND -->
+    <div class="section">
+        <h2>ACADEMIC BACKGROUND</h2>
+        <ul>
+            <li><b>Ph.D.</b>: 2020 – 2025<br>
+                Dept. of Electrical Engineering, IIT Hyderabad
+            </li>
 
-        <li>
-            <span class="me">Ritesh Kumar</span>, Shashank Vatedka,<br>
-            <em>“Communication-Constrained Distributed Mean Estimation of Log-Concave Distributions,”</em><br>
-            Proceedings of the 29th National Conference on Communications (NCC), 2023 — 
-            <span class="award">Best Paper Award (Communications Track)</span>.<br>
-            <a href="https://ieeexplore.ieee.org/document/10067942" target="_blank">[Paper]</a>
-        </li>
+            <li><b>M.Tech</b>: 2018 – 2020<br>
+                Dept. of Electrical Engineering, IIT Patna
+            </li>
 
-        <li>
-            <span class="me">Ritesh Kumar</span>, Pritam Khan, Sudhir Kumar,<br>
-            <em>“Healthcare Data Encryption Technique using Hybrid Cellular Automata in IoT Networks,”</em><br>
-            Wireless Personal Communications, Springer, October 2022.<br>
-            <a href="https://link.springer.com/article/10.1007/s11277-022-09850-4" target="_blank">[Paper]</a>
-        </li>
+            <li><b>B.Tech</b>: 2013 – 2017<br>
+                Dept. of Electronics and Communication Engineering, Punjab Technical University
+            </li>
+        </ul>
+    </div>
 
-        <li>
-            <span class="me">Ritesh Kumar</span>, Pritam Khan, Sudhir Kumar,<br>
-            <em>“A Cellular Automata-based Healthcare Data Encryption Technique for IoT Networks,”</em><br>
-            16th IEEE India Council International Conference (INDICON), IEEE, Rajkot, India, 2019.<br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9030349" target="_blank">[Paper]</a>
-        </li>
+    <!-- AWARDS -->
+    <div class="section">
+        <h2>AWARDS / RECOGNITIONS</h2>
+        <ul>
+            <li>Selected for <b>JENESYS 2023 India Japan Student Exchange Program</b>.</li>
+            <li>Won the <b>Best Paper Award</b> at NCC 2023.</li>
+            <li>Won the <b>Best Paper Award</b> in the <b>M. V. Chauhan Paper Contest (INDICON)</b>, 2019.</li>
+            <li>Secured 1st position in the <b>Project Exhibition (B.Tech Project)</b>.</li>
+            <li>Secured 3rd position in <b>Mathematics Competition</b>at District Level.</li>
+            <li>Secured 3rd position in <b>Kavita Path (poetry)</b> at District Level.</li>
+        </ul>
+    </div>
 
-    </ol>
-</div>
-
-<!-- PROJECTS -->
-<div class="section" id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <b>Distributed Inference under Communication Constraints</b><br>
-            Working on efficient algorithms for federated systems with limited communication.
-        </li>
-
-        <li>
-            <b>Federated Learning with Robust Quantization (EDEN)</b><br>
-            Implemented robust distributed mean estimation techniques.
-        </li>
-
-        <li>
-            <b>Communication-Efficient Distributed Systems</b><br>
-            Designed algorithms minimizing communication cost.
-        </li>
-    </ul>
-</div>
-
-<!-- MISC -->
-<div class="section" id="misc">
-    <h2>Beyond Research</h2>
-    <p>
-        ✍️ A poet exploring rhythm and ideas.<br>
-        🏑 Inter-IIT hockey player and team leader.<br>
-        🎭 Interested in expression beyond equations.
-    </p>
-</div>
-
-<!-- BLOG -->
-<div class="section" id="blog">
-    <h2>Writings & Thoughts</h2>
-    <p>
-        Coming soon — I will share thoughts on research, life, and ideas.
-    </p>
-</div>
-
-<!-- CONTACT -->
-<div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: ritesharyan622@gmail.com</p>
-</div>
+    <!-- CONTACT (spacing slightly reduced) -->
+    <div class="section">
+        <h2>CONTACT</h2>
+        <p style="margin-top:10px;">
+            Department of Electrical Engineering<br>
+            Indian Institute of Technology Hyderabad<br>
+            Telangana, India<br>
+            Email: ee20resch11005[at]iith[dot]ac[dot]in
+        </p>
+    </div>
 
 </div>
 
