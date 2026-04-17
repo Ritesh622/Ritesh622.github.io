@@ -2,25 +2,45 @@ body {
     margin: 0;
     font-family: "Times New Roman", serif;
     background: #fdfdf8;
-    color: #000;
+    color: #111;
     line-height: 1.6;
     font-size: 16.5px;
 }
 
-/* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 1px solid #ccc;
-}
-
+/* HEADER LINKS */
 .header a {
+    position: relative;
     text-decoration: none;
     color: #1a73e8;
     margin-left: 20px;
     font-size: 15px;
+    padding-bottom: 4px;
+}
+
+/* UNDERLINE (hidden initially) */
+.header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #1a73e8;
+    transition: width 0.25s ease;
+}
+
+/* HOVER ANIMATION */
+.header a:hover::after {
+    width: 100%;
+}
+
+/* ACTIVE TAB (always visible underline) */
+.header a.active {
+    font-weight: 600;
+}
+
+.header a.active::after {
+    width: 100%;
 }
 
 /* NAME */
@@ -80,8 +100,22 @@ hr {
 /* LINKS */
 .links a {
     margin-right: 15px;
-    color: #0c6ded;
+    color: #1a73e8;
     text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* GENERAL LINKS */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* SECTIONS */
@@ -95,6 +129,7 @@ hr {
     padding-bottom: 6px;
 }
 
+/* LISTS */
 ul {
     padding-left: 20px;
 }
@@ -111,16 +146,12 @@ li {
     border-top: 1px solid #ccc;
 }
 
-/* ACTIVE NAV */
-.active {
-    font-weight: 600;
-    color: black;
-}
-
+/* HIGHLIGHT NAME IN PUBLICATIONS */
 .me {
     font-weight: 700;
 }
 
+/* PUBLICATION LINKS */
 .pub-list a {
-    color: #0b3d91;   /* 🔥 darker blue */
+    color: #1a73e8;
 }

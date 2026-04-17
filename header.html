@@ -1,0 +1,28 @@
+<!-- HEADER -->
+<div class="header">
+    <div class="name">
+        <a href="index.html">Ritesh Kumar</a>
+    </div>
+
+    <div>
+        <a href="research.html">RESEARCH</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="reading.html">READING</a>
+        <a href="beyond.html">BEYOND</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+</div>
+
+<script>
+    const links = document.querySelectorAll('.header a');
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+
+        if (href === currentPage || (href === "index.html" && currentPage === "")) {
+            link.classList.add('active');
+        }
+    });
+</script>

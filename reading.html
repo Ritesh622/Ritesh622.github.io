@@ -9,180 +9,187 @@
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <div class="name">
-        <a href="index.html">Ritesh Kumar</a>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                // ACTIVE TAB LOGIC
+                const links = document.querySelectorAll('.header a');
+                const currentPage = window.location.pathname.split("/").pop();
+
+                links.forEach(link => {
+                    const href = link.getAttribute('href');
+
+                    if (href === currentPage || (href === "index.html" && currentPage === "")) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+    </script>
+
+    <!-- TITLE -->
+    <div class="title">Further Reading</div>
+
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="section">
+            <p>
+                This is a small collection of things I’ve been using while learning and exploring.
+                It’s not meant to be complete — just a running list of what I find useful along the way.
+            </p>
+        </div>
+
+        <!-- LEARNING -->
+        <div class="section">
+            <h2>Learning Resources</h2>
+
+            <p>
+                I usually start with 
+                <a href="https://www.coursera.org" target="_blank">Coursera</a> 
+                when I don’t know much about a topic. The structure helps me stay on track.
+            </p>
+
+            <p>
+                <a href="https://ocw.mit.edu" target="_blank">MIT OpenCourseWare</a> 
+                is something I use when I want more detailed lectures. It can feel heavy, but it's solid.
+            </p>
+
+            <p>
+                I’ve used 
+                <a href="https://nptel.ac.in" target="_blank">NPTEL</a> 
+                quite a bit during college. It aligns well with coursework.
+            </p>
+
+            <p>
+                I came across the 
+                <a href="https://flower.ai/docs/framework/index.html" target="_blank">Flower documentation</a> 
+                while trying to understand federated learning. Still exploring it.
+            </p>
+
+            <p>
+                Sometimes I watch talks from the 
+                <a href="https://simons.berkeley.edu/videos" target="_blank">Simons Institute</a>. 
+                I don’t always understand everything, but it’s useful exposure.
+            </p>
+        </div>
+
+        <!-- BOOKS -->
+        <div class="section">
+            <h2>Books and Notes</h2>
+
+            <p>
+                <a href="https://www.gutenberg.org" target="_blank">Project Gutenberg</a> 
+                is where I go for non-technical reading.
+            </p>
+
+            <p>
+                <a href="https://archive.org" target="_blank">Archive.org</a> 
+                has been useful for finding older material.
+            </p>
+
+            <p>
+                <a href="https://openlibrary.org" target="_blank">Open Library</a> 
+                is helpful when I just want to quickly check a book.
+            </p>
+
+            <p>
+                I’ve occasionally looked at notes from 
+                <a href="https://www.ams.org/open-math-notes" target="_blank">AMS</a>, 
+                though I’m still getting comfortable with them.
+            </p>
+        </div>
+
+        <!-- TOOLS -->
+        <div class="section">
+            <h2>Tools I Use</h2>
+
+            <p>
+                <a href="https://www.ilovepdf.com/" target="_blank">ILovePDF</a> 
+                is something I use often to clean and compress PDFs.
+            </p>
+        </div>
+
+        <!-- PAPERS -->
+        <div class="section">
+            <h2>Reading Papers</h2>
+
+            <p>
+                This guide on 
+                <a href="https://www.cs.cmu.edu/~jrs/sins.html" target="_blank">how to read a paper</a> 
+                helped me understand how to approach research papers.
+            </p>
+
+            <p>
+                I also found this 
+                <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">
+                    Stanford guide
+                </a> 
+                useful when I felt lost.
+            </p>
+        </div>
+
+        <!-- WRITING -->
+        <div class="section">
+            <h2>Writing</h2>
+
+            <p>
+                The 
+                <a href="https://www.chicagomanualofstyle.org/home.html" target="_blank">
+                    Chicago Manual of Style
+                </a> 
+                is a good reference when I want clarity.
+            </p>
+
+            <p>
+                I tried reading “How to Write Mathematics”:
+                <a href="https://www.jstor.org/stable/2325827" target="_blank">link</a>. 
+                It’s dense but useful.
+            </p>
+
+            <p>
+                I like going through 
+                <a href="https://www.paulgraham.com/articles.html" target="_blank">
+                    Paul Graham’s essays
+                </a>.
+            </p>
+        </div>
+
+        <!-- FURTHER -->
+        <div class="section">
+            <h2>Further Reading</h2>
+
+            <p>
+                <a href="https://terrytao.wordpress.com" target="_blank">
+                    Terence Tao’s blog
+                </a> — I don’t understand most of it yet, but it’s inspiring.
+            </p>
+
+            <p>
+                <a href="https://calnewport.com/blog/" target="_blank">
+                    Cal Newport
+                </a> — useful ideas on focus and studying.
+            </p>
+
+            <p>
+                <a href="https://www.lesswrong.com" target="_blank">
+                    LessWrong
+                </a> — interesting discussions on reasoning.
+            </p>
+
+            <p>
+                <a href="https://www.paulgraham.com/articles.html" target="_blank">
+                    Paul Graham essays
+                </a> — I revisit these often.
+            </p>
+        </div>
+
     </div>
-
-    <div>
-        <a href="research.html">RESEARCH</a>
-        <a href="publications.html">PUBLICATIONS</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="reading.html" class="active">READING</a>
-        <a href="beyond.html">BEYOND</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
-</div>
-
-<!-- TITLE -->
-<div class="title">Further Reading</div>
-
-<div class="container">
-
-    <!-- INTRO -->
-    <div class="section">
-        <p>
-            This is a small collection of things I’ve been using while learning and exploring.
-            It’s not meant to be complete — just a running list of what I find useful along the way.
-        </p>
-    </div>
-
-    <!-- LEARNING -->
-    <div class="section">
-        <h2>Learning Resources</h2>
-
-        <p>
-            I usually start with 
-            <a href="https://www.coursera.org" target="_blank">Coursera</a> 
-            when I don’t know much about a topic. The structure helps me stay on track.
-        </p>
-
-        <p>
-            <a href="https://ocw.mit.edu" target="_blank">MIT OpenCourseWare</a> 
-            is something I use when I want more detailed lectures. It can feel heavy, but it's solid.
-        </p>
-
-        <p>
-            I’ve used 
-            <a href="https://nptel.ac.in" target="_blank">NPTEL</a> 
-            quite a bit during college. It aligns well with coursework.
-        </p>
-
-        <p>
-            I came across the 
-            <a href="https://flower.ai/docs/framework/index.html" target="_blank">Flower documentation</a> 
-            while trying to understand federated learning. Still exploring it.
-        </p>
-
-        <p>
-            Sometimes I watch talks from the 
-            <a href="https://simons.berkeley.edu/videos" target="_blank">Simons Institute</a>. 
-            I don’t always understand everything, but it’s useful exposure.
-        </p>
-    </div>
-
-    <!-- BOOKS -->
-    <div class="section">
-        <h2>Books and Notes</h2>
-
-        <p>
-            <a href="https://www.gutenberg.org" target="_blank">Project Gutenberg</a> 
-            is where I go for non-technical reading.
-        </p>
-
-        <p>
-            <a href="https://archive.org" target="_blank">Archive.org</a> 
-            has been useful for finding older material.
-        </p>
-
-        <p>
-            <a href="https://openlibrary.org" target="_blank">Open Library</a> 
-            is helpful when I just want to quickly check a book.
-        </p>
-
-        <p>
-            I’ve occasionally looked at notes from 
-            <a href="https://www.ams.org/open-math-notes" target="_blank">AMS</a>, 
-            though I’m still getting comfortable with them.
-        </p>
-    </div>
-
-    <!-- TOOLS -->
-    <div class="section">
-        <h2>Tools I Use</h2>
-
-        <p>
-            <a href="https://www.ilovepdf.com/" target="_blank">ILovePDF</a> 
-            is something I use often to clean and compress PDFs.
-        </p>
-    </div>
-
-    <!-- PAPERS -->
-    <div class="section">
-        <h2>Reading Papers</h2>
-
-        <p>
-            This guide on 
-            <a href="https://www.cs.cmu.edu/~jrs/sins.html" target="_blank">how to read a paper</a> 
-            helped me understand how to approach research papers.
-        </p>
-
-        <p>
-            I also found this 
-            <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">
-                Stanford guide
-            </a> 
-            useful when I felt lost.
-        </p>
-    </div>
-
-    <!-- WRITING -->
-    <div class="section">
-        <h2>Writing</h2>
-
-        <p>
-            The 
-            <a href="https://www.chicagomanualofstyle.org/home.html" target="_blank">
-                Chicago Manual of Style
-            </a> 
-            is a good reference when I want clarity.
-        </p>
-
-        <p>
-            I tried reading “How to Write Mathematics”:
-            <a href="https://www.jstor.org/stable/2325827" target="_blank">link</a>. 
-            It’s dense but useful.
-        </p>
-
-        <p>
-            I like going through 
-            <a href="https://www.paulgraham.com/articles.html" target="_blank">
-                Paul Graham’s essays
-            </a>.
-        </p>
-    </div>
-
-    <!-- FURTHER -->
-    <div class="section">
-        <h2>Further Reading</h2>
-
-        <p>
-            <a href="https://terrytao.wordpress.com" target="_blank">
-                Terence Tao’s blog
-            </a> — I don’t understand most of it yet, but it’s inspiring.
-        </p>
-
-        <p>
-            <a href="https://calnewport.com/blog/" target="_blank">
-                Cal Newport
-            </a> — useful ideas on focus and studying.
-        </p>
-
-        <p>
-            <a href="https://www.lesswrong.com" target="_blank">
-                LessWrong
-            </a> — interesting discussions on reasoning.
-        </p>
-
-        <p>
-            <a href="https://www.paulgraham.com/articles.html" target="_blank">
-                Paul Graham essays
-            </a> — I revisit these often.
-        </p>
-    </div>
-
-</div>
 
 </body>
 </html>

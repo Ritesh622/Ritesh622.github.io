@@ -9,101 +9,109 @@
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <div class="name">
-        <a href="index.html">Ritesh Kumar</a>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                // ACTIVE TAB LOGIC
+                const links = document.querySelectorAll('.header a');
+                const currentPage = window.location.pathname.split("/").pop();
+
+                links.forEach(link => {
+                    const href = link.getAttribute('href');
+
+                    if (href === currentPage || (href === "index.html" && currentPage === "")) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+    </script>
+
+    <!-- TITLE -->
+    <div class="title">Research</div>
+
+    <div class="container">
+
+        <!-- INTRO -->
+        <div class="section">
+            <p>
+                My research focuses on communication-efficient learning, distributed inference, and signal processing,
+                with applications spanning federated systems, wireless communication, and imaging pipelines.
+            </p>
+        </div>
+
+        <!-- SECTION 1 -->
+        <div class="section">
+            <h2>Camera and Image Quality Engineering</h2>
+
+            <p>
+                As part of my work at Qualcomm, I focus on the evaluation and optimization of camera systems,
+                with particular emphasis on image and video quality. This involves analyzing complex camera
+                pipelines and improving their performance across diverse real-world scenarios. My work includes
+                designing and developing tools for image quality assessment using MATLAB and Python, enabling
+                systematic evaluation and efficient debugging of camera systems.
+            </p>
+
+            <p>
+                The primary goal of this work is to bridge the gap between algorithmic design and real-world
+                deployment, ensuring that imaging systems perform robustly under varying conditions. This
+                includes optimizing color reproduction, noise characteristics, and overall perceptual quality,
+                while maintaining computational efficiency. Through this work, I gain practical insights into
+                large-scale system design and real-time performance constraints.
+            </p>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section">
+            <h2>Distributed Inference and Learning under Communication Constraints</h2>
+
+            <p>
+                My primary research during my Ph.D. focuses on developing communication-efficient algorithms
+                for distributed systems, particularly in the context of federated learning. In modern large-scale
+                networks, communication often becomes a bottleneck, and my work aims to understand and address
+                the trade-off between estimation accuracy and communication cost in such systems.
+            </p>
+
+            <p>
+                I study distributed statistical inference problems where multiple clients collaboratively compute
+                global quantities under strict communication constraints. This includes designing quantization
+                schemes and compression techniques that reduce communication overhead while preserving statistical
+                efficiency. A key aspect of this research is analyzing both theoretical limits and practical algorithms
+                that operate effectively in bandwidth-limited environments.
+            </p>
+
+            <p>
+                In addition, I explore type-based quantization methods for discrete probability mass functions,
+                which provide structured and efficient representations for distributed estimation tasks. My work
+                combines tools from information theory, optimization, and machine learning to develop scalable
+                solutions for real-world distributed systems.
+            </p>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="section">
+            <h2>RIS-Assisted NOMA/OMA Communication Systems</h2>
+
+            <p>
+                I have also worked on wireless communication systems involving Reconfigurable Intelligent Surfaces
+                (RIS) and hybrid NOMA/OMA schemes. This work focuses on improving spectral efficiency and system
+                performance by leveraging intelligent signal reflection and advanced multiple access techniques.
+            </p>
+
+            <p>
+                In particular, I studied the impact of practical imperfections such as imperfect successive interference
+                cancellation (SIC) and phase compensation errors in RIS-assisted systems. The goal is to design robust
+                communication strategies that maintain performance under non-ideal conditions. This line of work
+                integrates concepts from signal processing, wireless communication theory, and system optimization.
+            </p>
+        </div>
+
     </div>
-
-    <div>
-        <a href="research.html" class="active">RESEARCH</a>
-        <a href="publications.html">PUBLICATIONS</a>
-        <a href="projects.html">PROJECTS</a>
-        <a href="beyond.html">BEYOND</a>
-        <a href="contact.html">CONTACT</a>
-    </div>
-</div>
-
-<!-- TITLE -->
-<div class="title">Research</div>
-
-<div class="container">
-
-    <!-- INTRO -->
-    <div class="section">
-        <p>
-            My research focuses on communication-efficient learning, distributed inference, and signal processing,
-            with applications spanning federated systems, wireless communication, and imaging pipelines.
-        </p>
-    </div>
-
-    <!-- SECTION 1 -->
-    <div class="section">
-        <h2>Camera and Image Quality Engineering</h2>
-
-        <p>
-            As part of my work at Qualcomm, I focus on the evaluation and optimization of camera systems,
-            with particular emphasis on image and video quality. This involves analyzing complex camera
-            pipelines and improving their performance across diverse real-world scenarios. My work includes
-            designing and developing tools for image quality assessment using MATLAB and Python, enabling
-            systematic evaluation and efficient debugging of camera systems.
-        </p>
-
-        <p>
-            The primary goal of this work is to bridge the gap between algorithmic design and real-world
-            deployment, ensuring that imaging systems perform robustly under varying conditions. This
-            includes optimizing color reproduction, noise characteristics, and overall perceptual quality,
-            while maintaining computational efficiency. Through this work, I gain practical insights into
-            large-scale system design and real-time performance constraints.
-        </p>
-    </div>
-
-    <!-- SECTION 2 -->
-    <div class="section">
-        <h2>Distributed Inference and Learning under Communication Constraints</h2>
-
-        <p>
-            My primary research during my Ph.D. focuses on developing communication-efficient algorithms
-            for distributed systems, particularly in the context of federated learning. In modern large-scale
-            networks, communication often becomes a bottleneck, and my work aims to understand and address
-            the trade-off between estimation accuracy and communication cost in such systems.
-        </p>
-
-        <p>
-            I study distributed statistical inference problems where multiple clients collaboratively compute
-            global quantities under strict communication constraints. This includes designing quantization
-            schemes and compression techniques that reduce communication overhead while preserving statistical
-            efficiency. A key aspect of this research is analyzing both theoretical limits and practical algorithms
-            that operate effectively in bandwidth-limited environments.
-        </p>
-
-        <p>
-            In addition, I explore type-based quantization methods for discrete probability mass functions,
-            which provide structured and efficient representations for distributed estimation tasks. My work
-            combines tools from information theory, optimization, and machine learning to develop scalable
-            solutions for real-world distributed systems.
-        </p>
-    </div>
-
-    <!-- SECTION 3 -->
-    <div class="section">
-        <h2>RIS-Assisted NOMA/OMA Communication Systems</h2>
-
-        <p>
-            I have also worked on wireless communication systems involving Reconfigurable Intelligent Surfaces
-            (RIS) and hybrid NOMA/OMA schemes. This work focuses on improving spectral efficiency and system
-            performance by leveraging intelligent signal reflection and advanced multiple access techniques.
-        </p>
-
-        <p>
-            In particular, I studied the impact of practical imperfections such as imperfect successive interference
-            cancellation (SIC) and phase compensation errors in RIS-assisted systems. The goal is to design robust
-            communication strategies that maintain performance under non-ideal conditions. This line of work
-            integrates concepts from signal processing, wireless communication theory, and system optimization.
-        </p>
-    </div>
-
-</div>
 
 </body>
 </html>
