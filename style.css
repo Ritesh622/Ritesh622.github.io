@@ -16,15 +16,7 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-.header a {
-    text-decoration: none;
-    color: #1a73e8;
-    margin-left: 20px;
-    font-size: 15px;
-}
-
-/* ACTIVE NAV (FIXED) */
-.header a.active {
+.header > div:last-child a.active {
     font-weight: 600;
     color: #1a73e8;
     border-bottom: 2px solid #1a73e8;
@@ -123,6 +115,7 @@ li {
 .me {
     font-weight: 700;
 }
+
 .pub-list a {
     color: #0b3d91;
 }
