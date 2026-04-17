@@ -18,13 +18,11 @@
             .then(data => {
                 document.getElementById('header').innerHTML = data;
 
-                // ACTIVE TAB LOGIC
                 const links = document.querySelectorAll('.header a');
                 const currentPage = window.location.pathname.split("/").pop();
 
                 links.forEach(link => {
                     const href = link.getAttribute('href');
-
                     if (href === currentPage || (href === "index.html" && currentPage === "")) {
                         link.classList.add('active');
                     }
@@ -39,12 +37,13 @@
 
         <!-- INTRO -->
         <div class="section">
-          <p>
-              This is a small collection of things I have been using while learning and exploring. 
-              It is not meant to be complete — just a running list of what I find useful along the way. 
-              I am deeply grateful to my advisor, 
-              <a href="https://people.iith.ac.in/shashankvatedka/html/home.html" target="_blank">Prof. Shashank Vatedka</a>, 
-              for his constant guidance and support. Much of what I have learned and many of the perspectives reflected here are shaped by his mentorship.
+            <p>
+                This is a small collection of resources that I have been using while learning and exploring. 
+                It is not meant to be complete, but rather a running list of material that I find useful over time. 
+                I am deeply grateful to my advisor, 
+                <a href="https://people.iith.ac.in/shashankvatedka/html/home.html" target="_blank">Prof. Shashank Vatedka</a>, 
+                for his constant guidance and support. Much of what I have learned, and many of the perspectives reflected here, 
+                are shaped by his mentorship.
             </p>
         </div>
 
@@ -53,32 +52,32 @@
             <h2>Learning Resources</h2>
 
             <p>
-                I usually start with 
+                I often begin with 
                 <a href="https://www.coursera.org" target="_blank">Coursera</a> 
-                when I don’t know much about a topic. The structure helps me stay on track.
+                when I am unfamiliar with a topic, as the structured format helps in building a foundation.
             </p>
 
             <p>
                 <a href="https://ocw.mit.edu" target="_blank">MIT OpenCourseWare</a> 
-                is something I use when I want more detailed lectures. It can feel heavy, but it's solid.
+                is useful when I want more detailed and rigorous lectures, even though it can be quite dense at times.
             </p>
 
             <p>
                 I have used 
                 <a href="https://nptel.ac.in" target="_blank">NPTEL</a> 
-                quite a bit during college. It aligns well with coursework.
+                extensively during my coursework, and it aligns well with standard academic curricula.
             </p>
 
             <p>
                 I came across the 
                 <a href="https://flower.ai/docs/framework/index.html" target="_blank">Flower documentation</a> 
-                while trying to understand federated learning. Still exploring it.
+                while exploring federated learning. It provides a practical perspective that complements theoretical understanding.
             </p>
 
             <p>
-                Sometimes I watch talks from the 
-                <a href="https://simons.berkeley.edu/videos" target="_blank">Simons Institute</a>. 
-                I don’t always understand everything, but it’s useful exposure.
+                I occasionally watch talks from the 
+                <a href="https://simons.berkeley.edu/videos" target="_blank">Simons Institute</a>, 
+                which offer exposure to advanced topics and current research directions.
             </p>
         </div>
 
@@ -88,23 +87,23 @@
 
             <p>
                 <a href="https://www.gutenberg.org" target="_blank">Project Gutenberg</a> 
-                is where I go for non-technical reading.
+                is a useful source for non-technical reading.
             </p>
 
             <p>
                 <a href="https://archive.org" target="_blank">Archive.org</a> 
-                has been useful for finding older material.
+                has been helpful for accessing older or otherwise hard-to-find material.
             </p>
 
             <p>
                 <a href="https://openlibrary.org" target="_blank">Open Library</a> 
-                is helpful when I just want to quickly check a book.
+                is convenient when I want to quickly look up a book.
             </p>
 
             <p>
-                I’ve occasionally looked at notes from 
+                I have occasionally referred to notes from the 
                 <a href="https://www.ams.org/open-math-notes" target="_blank">AMS</a>, 
-                though I’m still getting comfortable with them.
+                although I am still becoming comfortable with them.
             </p>
         </div>
 
@@ -114,7 +113,35 @@
 
             <p>
                 <a href="https://www.ilovepdf.com/" target="_blank">ILovePDF</a> 
-                is something I use often to clean and compress PDFs.
+                is something I use frequently to clean and compress PDFs.
+            </p>
+
+            <p>
+                I use 
+                <a href="https://www.overleaf.com/" target="_blank">Overleaf</a> 
+                for writing and collaborating on documents in LaTeX.
+            </p>
+
+            <p>
+                For managing references, I find 
+                <a href="https://www.zotero.org/" target="_blank">Zotero</a> 
+                quite useful.
+            </p>
+
+            <p>
+                I frequently use 
+                <a href="https://arxiv.org/" target="_blank">arXiv</a> 
+                to follow recent developments and explore new ideas.
+            </p>
+
+            <p>
+                <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> 
+                is helpful for finding related work and tracking citations.
+            </p>
+
+            <p>
+                For quick experiments and prototyping, I use 
+                <a href="https://colab.research.google.com/" target="_blank">Google Colab</a>.
             </p>
         </div>
 
@@ -125,7 +152,7 @@
             <p>
                 This guide on 
                 <a href="https://www.cs.cmu.edu/~jrs/sins.html" target="_blank">how to read a paper</a> 
-                helped me understand how to approach research papers.
+                helped me understand how to approach research papers more effectively.
             </p>
 
             <p>
@@ -133,7 +160,7 @@
                 <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">
                     Stanford guide
                 </a> 
-                useful when I felt lost.
+                useful when I initially felt uncertain about how to begin reading research literature.
             </p>
         </div>
 
@@ -146,20 +173,21 @@
                 <a href="https://www.chicagomanualofstyle.org/home.html" target="_blank">
                     Chicago Manual of Style
                 </a> 
-                is a good reference when I want clarity.
+                is a helpful reference for improving clarity in writing.
             </p>
 
             <p>
-                I tried reading “How to Write Mathematics”:
-                <a href="https://www.jstor.org/stable/2325827" target="_blank">link</a>. 
-                It’s dense but useful.
+                I have referred to “How to Write Mathematics”:
+                <a href="https://www.jstor.org/stable/2325827" target="_blank">link</a>, 
+                which, although dense, provides valuable insights.
             </p>
 
             <p>
-                I like going through 
+                I often read 
                 <a href="https://www.paulgraham.com/articles.html" target="_blank">
                     Paul Graham’s essays
-                </a>.
+                </a> 
+                for their clarity and simplicity.
             </p>
         </div>
 
@@ -170,25 +198,37 @@
             <p>
                 <a href="https://terrytao.wordpress.com" target="_blank">
                     Terence Tao’s blog
-                </a> — I don’t understand most of it yet, but it’s inspiring.
+                </a> — I do not fully understand everything yet, but it is inspiring and offers insight into how deep mathematical thinking develops.
             </p>
 
             <p>
                 <a href="https://calnewport.com/blog/" target="_blank">
                     Cal Newport
-                </a> — useful ideas on focus and studying.
+                </a> — provides useful perspectives on focus and structured learning.
             </p>
 
             <p>
                 <a href="https://www.lesswrong.com" target="_blank">
                     LessWrong
-                </a> — interesting discussions on reasoning.
+                </a> — contains discussions on reasoning and clear thinking, which I explore occasionally.
             </p>
 
             <p>
                 <a href="https://www.paulgraham.com/articles.html" target="_blank">
                     Paul Graham essays
-                </a> — I revisit these often.
+                </a> — I revisit these frequently for their clarity and simplicity.
+            </p>
+
+            <p>
+                <a href="https://distill.pub/" target="_blank">
+                    Distill
+                </a> — provides intuitive and well-structured explanations of complex ideas.
+            </p>
+
+            <p>
+                <a href="https://www.quantamagazine.org/" target="_blank">
+                    Quanta Magazine
+                </a> — presents advanced topics in science and mathematics in an accessible way.
             </p>
         </div>
 
