@@ -7,6 +7,15 @@ body {
     font-size: 16.5px;
 }
 
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;  /* keeps tabs at far right */
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
 /* HEADER LINKS */
 .header a {
     position: relative;
@@ -14,27 +23,26 @@ body {
     color: #1a73e8;
     margin-left: 20px;
     font-size: 15px;
-    padding-bottom: 4px;
 }
 
-/* UNDERLINE (hidden initially) */
+/* UNDERLINE (no layout shift) */
 .header a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     width: 0%;
     height: 2px;
     background-color: #1a73e8;
     transition: width 0.25s ease;
 }
 
-/* HOVER ANIMATION */
+/* HOVER */
 .header a:hover::after {
     width: 100%;
 }
 
-/* ACTIVE TAB (always visible underline) */
+/* ACTIVE TAB */
 .header a.active {
     font-weight: 600;
 }
