@@ -18,13 +18,11 @@
             .then(data => {
                 document.getElementById('header').innerHTML = data;
 
-                // ACTIVE TAB LOGIC
                 const links = document.querySelectorAll('.header a');
                 const currentPage = window.location.pathname.split("/").pop();
 
                 links.forEach(link => {
                     const href = link.getAttribute('href');
-
                     if (href === currentPage || (href === "index.html" && currentPage === "")) {
                         link.classList.add('active');
                     }
@@ -42,10 +40,12 @@
             <p>
                 My research focuses on communication-efficient learning, distributed inference, and signal processing,
                 with applications spanning federated systems, wireless communication, and imaging pipelines.
+                I am particularly interested in understanding the trade-offs between statistical efficiency,
+                communication constraints, and practical system design.
             </p>
         </div>
 
-        <!-- SECTION 1 -->
+        <!-- CAMERA -->
         <div class="section">
             <h2>Camera and Image Quality Engineering</h2>
 
@@ -53,47 +53,55 @@
                 As part of my work at Qualcomm, I focus on the evaluation and optimization of camera systems,
                 with particular emphasis on image and video quality. This involves analyzing complex camera
                 pipelines and improving their performance across diverse real-world scenarios. My work includes
-                designing and developing tools for image quality assessment using MATLAB and Python, enabling
-                systematic evaluation and efficient debugging of camera systems.
+                designing tools for systematic image quality assessment using MATLAB and Python, enabling
+                efficient debugging and evaluation.
             </p>
 
             <p>
-                The primary goal of this work is to bridge the gap between algorithmic design and real-world
-                deployment, ensuring that imaging systems perform robustly under varying conditions. This
-                includes optimizing color reproduction, noise characteristics, and overall perceptual quality,
-                while maintaining computational efficiency. Through this work, I gain practical insights into
-                large-scale system design and real-time performance constraints.
+                A key objective is to bridge the gap between algorithmic design and real-world deployment,
+                ensuring that imaging systems perform robustly under varying conditions. This includes improving
+                color reproduction, noise characteristics, and perceptual quality while maintaining computational
+                efficiency and real-time constraints.
+            </p>
+
+            <p>
+                For key references, see 
+                <a href="https://ieeexplore.ieee.org/document/9760117" target="_blank">this paper</a> and 
+                <a href="https://openaccess.thecvf.com/content_CVPRW_2022/html/w6/Ponomarenko_Perceptual_Image_Quality_Assessment_CVPRW_2022_paper.html" target="_blank">this paper</a>.
             </p>
         </div>
 
-        <!-- SECTION 2 -->
+        <!-- DISTRIBUTED -->
         <div class="section">
             <h2>Distributed Inference and Learning under Communication Constraints</h2>
 
             <p>
                 My primary research during my Ph.D. focuses on developing communication-efficient algorithms
-                for distributed systems, particularly in the context of federated learning. In modern large-scale
-                networks, communication often becomes a bottleneck, and my work aims to understand and address
-                the trade-off between estimation accuracy and communication cost in such systems.
+                for distributed systems, particularly in federated learning settings. In large-scale networks,
+                communication often becomes a bottleneck, and my work studies the trade-off between estimation
+                accuracy and communication cost.
             </p>
 
             <p>
-                I study distributed statistical inference problems where multiple clients collaboratively compute
-                global quantities under strict communication constraints. This includes designing quantization
-                schemes and compression techniques that reduce communication overhead while preserving statistical
-                efficiency. A key aspect of this research is analyzing both theoretical limits and practical algorithms
-                that operate effectively in bandwidth-limited environments.
+                I investigate distributed statistical inference problems where multiple clients collaboratively
+                compute global quantities under strict communication constraints. This includes designing
+                quantization schemes and compression techniques that reduce communication overhead while
+                preserving statistical efficiency. My work also explores structured representations such as
+                type-based quantization for discrete distributions, combining tools from information theory,
+                optimization, and machine learning.
             </p>
 
             <p>
-                In addition, I explore type-based quantization methods for discrete probability mass functions,
-                which provide structured and efficient representations for distributed estimation tasks. My work
-                combines tools from information theory, optimization, and machine learning to develop scalable
-                solutions for real-world distributed systems.
+                For key references, see 
+                <a href="https://openreview.net/forum?id=g95C4zIEPg" target="_blank">this paper</a>, 
+                <a href="https://ieeexplore.ieee.org/document/10067942" target="_blank">this paper</a>, 
+                <a href="https://proceedings.mlr.press/v54/mcmahan17a.html" target="_blank">this paper</a>, 
+                <a href="https://arxiv.org/abs/1912.04977" target="_blank">this paper</a>, and 
+                <a href="https://arxiv.org/abs/2106.05203" target="_blank">this paper</a>.
             </p>
         </div>
 
-        <!-- SECTION 3 -->
+        <!-- RIS -->
         <div class="section">
             <h2>RIS-Assisted NOMA/OMA Communication Systems</h2>
 
@@ -104,10 +112,16 @@
             </p>
 
             <p>
-                In particular, I studied the impact of practical imperfections such as imperfect successive interference
-                cancellation (SIC) and phase compensation errors in RIS-assisted systems. The goal is to design robust
-                communication strategies that maintain performance under non-ideal conditions. This line of work
-                integrates concepts from signal processing, wireless communication theory, and system optimization.
+                In particular, I studied the impact of practical imperfections such as imperfect successive
+                interference cancellation (SIC) and phase compensation errors. The goal is to design robust
+                communication strategies that maintain performance under non-ideal conditions, integrating
+                concepts from signal processing, wireless communication theory, and system optimization.
+            </p>
+
+            <p>
+                For key references, see 
+                <a href="https://ieeexplore.ieee.org/document/8892613" target="_blank">this paper</a> and 
+                <a href="https://ieeexplore.ieee.org/document/8643148" target="_blank">this paper</a>.
             </p>
         </div>
 
