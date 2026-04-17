@@ -17,29 +17,27 @@ body {
 }
 
 .header a {
-    text-decoration: none;
+    text-decoration: none;   /* ❌ no underline */
     color: #1a73e8;
-    margin-left: 20px;
+    margin-left: 20px;       /* spacing between tabs */
     font-size: 15px;
 }
 
-/* ACTIVE NAV (unchanged) */
-.header a.active {
+/* ACTIVE TAB → only slightly bigger */
+.header > div:last-child a.active {
+    font-size: 16.5px;       /* slightly bigger */
     font-weight: 600;
-    color: #1a73e8;
-    border-bottom: 2px solid #1a73e8;
-    padding-bottom: 3px;
+    color: #1a73e8;          /* same color */
 }
 
-/* NAME (ONLY CHANGE HERE) */
+/* NAME (unchanged, stays black) */
 .name a {
     font-size: 36px;
     font-weight: 700;
     font-style: italic;
-    color: black;
+    color: black !important;
     text-decoration: none;
     margin-left: 0;
-    pointer-events: none;
 }
 
 /* TITLE */
