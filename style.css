@@ -77,11 +77,11 @@ hr {
 
 /* IMAGE */
 .profile-pic {
-    width: 180px;
-    height: 220px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 400px;   /* control size */
+    height: auto;       /* keeps original ratio */
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 /* LINKS */
