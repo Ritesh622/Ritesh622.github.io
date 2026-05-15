@@ -75,13 +75,17 @@ hr {
     margin-top: 15px;
 }
 
-/* IMAGE */
+/* PROFILE IMAGE */
 .profile-pic {
     width: 100%;
-    max-width: 400px;   /* control size */
-    height: auto;       /* keeps original ratio */
+    max-width: 320px;     /* good desktop size */
+    aspect-ratio: 3 / 4;  /* preserves portrait ratio */
+    object-fit: cover;
+    
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 8px;
+
+    display: block;
 }
 
 /* LINKS */
