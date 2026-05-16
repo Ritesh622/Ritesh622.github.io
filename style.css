@@ -63,30 +63,36 @@ hr {
 
 /* MAIN */
 .container {
-    max-width: 850px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 .intro {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    gap: 35px;
+    align-items: flex-start;
     margin-top: 15px;
 }
 
 /* PROFILE IMAGE */
 .profile-pic {
-    width: 260px;
-    height: 340px;
+    width: 230px;
+    height: 300px;
 
     object-fit: cover;
+    object-position: center top;
 
     border-radius: 8px;
 
     display: block;
+    flex-shrink: 0;
 }
 
+.intro-text {
+    flex: 1;
+    max-width: 560px;
+}
 /* LINKS */
 .links a {
     margin-right: 15px;
