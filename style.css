@@ -76,10 +76,9 @@ hr {
 }
 
 /* PROFILE IMAGE */
-/* PROFILE IMAGE */
 .profile-pic {
-    width: 360px;
-    height: 480px;
+    width: 260px;
+    height: 340px;
 
     object-fit: cover;
 
