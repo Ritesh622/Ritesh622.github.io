@@ -79,12 +79,9 @@ hr {
 .profile-pic {
     width: 100%;
     max-width: 340px;
-    height: auto;
+    height: 420px;
 
-    border-radius: 8px;
     object-fit: cover;
-
-    image-rendering: auto;
 }
 
 /* LINKS */
