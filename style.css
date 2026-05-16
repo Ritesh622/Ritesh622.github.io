@@ -76,12 +76,16 @@ hr {
 }
 
 /* PROFILE IMAGE */
+/* PROFILE IMAGE */
 .profile-pic {
-    width: 100%;
-    max-width: 300px;
-    height: 350px;
+    width: 360px;
+    height: 480px;
 
     object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
 }
 
 /* LINKS */
