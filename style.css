@@ -140,3 +140,8 @@ a {
     color: #0c6ded;
     text-decoration: none;
 }
+
+.pub-list b {
+    color: #b8860b;   /* dark gold */
+    font-weight: 700;
+}
